@@ -1,4 +1,5 @@
 .container_hero {
+  position: relative;
   background: url('../../assets/bg.png'), linear-gradient(180deg, #41677F 0%, #3F657C 100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -8,6 +9,19 @@
   align-items: center;
   padding-top: 5.75rem;
   padding-bottom: 8rem;
+  overflow: hidden;
+}
+
+.container_hero::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+  z-index: 1;
 }
 
 .title {
