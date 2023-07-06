@@ -1,0 +1,50 @@
+.header {
+  background: url('../../assets/bg.png'), linear-gradient(180deg, #41677F 0%, #3F657C 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+}
+
+.container_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding-top: 1.25rem;
+  gap: 3.75rem;
+}
+
+.container img {
+  width: 300px;
+  height: 80px;
+}
+
+.container_links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.container_links li a{
+  color: #CFCFCF;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.button_contact {
+  background-color: #11E956;
+  height: 44px;
+  border-radius: .5rem;
+  border: none;
+  padding: .75rem 1.5rem .75rem 1.5rem;
+  color: #001F3F;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1.25rem;
+}
