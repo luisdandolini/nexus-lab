@@ -1,0 +1,53 @@
+.container_hero {
+  background: url('../../assets/bg.png'), linear-gradient(180deg, #41677F 0%, #3F657C 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5.75rem;
+  padding-bottom: 8rem;
+}
+
+.title {
+  font-size: 3.4rem;
+  font-weight: 800;
+  color: #001F3F;
+}
+
+.title span {
+  color: #11E956;
+}
+
+.container_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container_esclamacao {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container_button {
+  margin-top: 4.28rem;
+}
+
+.container_button button {
+  background-color: #11E956;
+  width: 240px;
+  height: 46px;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #001F3F;
+}
+
+.hero_image {
+  width: 424px;
+  height: 384px;
+}
