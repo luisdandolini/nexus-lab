@@ -115,6 +115,42 @@
   cursor: pointer;
 }
 
+@media(max-width: 768px) {
+  .container_project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem
+  }
+  .image_portfolio {
+    width: 330px;
+  }
+  
+  .content {
+    width: 330px;
+  }
+  .container_button_projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    padding-bottom: 8rem;
+  }
+  .more_projects {
+    width: 200px;
+  }
+  .container_portfolio h2 {
+    color: #001F3F;
+    font-size: 2rem;
+    margin-bottom:  1.5rem;
+    margin-left: 3rem;
+  }
+}
+
 @media(min-width: 2000px) {
   .container_portfolio h2 {
     margin-left: 45rem;
