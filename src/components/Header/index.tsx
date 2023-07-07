@@ -1,6 +1,20 @@
 import './styles.css';
+import { useMediaQuery } from 'react-responsive';
+import { useState, useEffect } from 'react';
+import HeaderMobile from '../HeaderMobile';
 
 export default function Header() {
+  const [isMobile, setIsMobile] = useState(false);
+  const isMobileQuery = useMediaQuery({ query: `(max-width: 767px)` });
+
+  useEffect(() => {
+    setIsMobile(isMobileQuery);
+  }, [isMobileQuery]);
+
+  if (isMobile) {
+    return <HeaderMobile />;
+  }
+
   return(
     <header className='header'>
       <nav className='container_nav'>
