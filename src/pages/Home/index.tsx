@@ -5,6 +5,7 @@ import About from "../../components/About";
 import Portfolio from "../../components/Portfolio";
 import Process from "../../components/Process";
 import Products from "../../components/Products";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return(
@@ -16,6 +17,7 @@ export default function Home() {
       <Portfolio />
       <Process />
       <Products />
+      <Footer />
     </>
   )
 }
