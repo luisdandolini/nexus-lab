@@ -7,7 +7,7 @@ import Divider from '../../assets/arrow-right.svg';
 
 export default function Process() {
   return(
-    <section className="container_process">
+    <section className="container_process" id='process'>
       <h2>Processo</h2>
       <div className='container_process_content'>
         <div className='process'>

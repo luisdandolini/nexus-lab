@@ -12,7 +12,7 @@ export default function About() {
   }, [isMobileQuery]);
 
   return(
-    <section className='container_about'>
+    <section className='container_about' id='about'>
       {
         isMobile ? (
           <h2>Sobre nós</h2>

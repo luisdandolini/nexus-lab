@@ -4,7 +4,7 @@ import ViewerSite from '../../assets/link-circle.svg'
 
 export default function Portfolio() {
   return(
-    <section className='container_portfolio'>
+    <section className='container_portfolio' id='portfolio'>
       <h2>Portifólio</h2>
       <div className='container_project'>
         <div className='container_portfolio_content'>

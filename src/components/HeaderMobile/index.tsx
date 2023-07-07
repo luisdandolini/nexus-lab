@@ -16,7 +16,7 @@ export default function HeaderMobile(){
 
   return(
     <header>
-      <div className="container_header">
+      <div className={openMenu ? "background_mobile" : "container_header"}>
         <img src="/Logo.svg" alt='Logo Fast Sales' className="logo"></img>
         <div className="menu">
           <div onClick={handleToggle} className="toggle">
@@ -41,11 +41,11 @@ export default function HeaderMobile(){
               <>
                 <div  className="menu_itens">
                   <ul className="links">
-                    <li><a onClick={() => smoothScroll("#home")}>Sobre nós</a></li>
-                    <li><a onClick={() => smoothScroll("#product")}>Portfólio</a></li>
-                    <li><a onClick={() => smoothScroll("#review")}>Processo</a></li>
+                    <li><a onClick={() => smoothScroll("#about")}>Sobre nós</a></li>
+                    <li><a onClick={() => smoothScroll("#portfolio")}>Portfólio</a></li>
+                    <li><a onClick={() => smoothScroll("#process")}>Processo</a></li>
                   </ul>
-                  <div className="container_button">
+                  <div className="container_button_mobile">
                     <button>Entre em contato</button>
                   </div>
                 </div>

@@ -7,6 +7,12 @@ export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
   const isMobileQuery = useMediaQuery({ query: `(max-width: 767px)` });
 
+  const smoothScroll = (sectionId: any) => {
+    document.querySelector(sectionId).scrollIntoView({
+      behavior: 'smooth'
+    });
+  };
+
   useEffect(() => {
     setIsMobile(isMobileQuery);
   }, [isMobileQuery]);
@@ -19,12 +25,12 @@ export default function Header() {
     <header className='header'>
       <nav className='container_nav'>
 
-        <div className='container'>
+        <div className='container_links_go'>
           <img src="/Logo.svg" alt="Logo Nexuslab" />
           <ul className='container_links'>
-            <li><a href="/">Sobre nós</a></li>
-            <li><a href="/">Portifólio</a></li>
-            <li><a href="/">Processo</a></li>
+            <li><a onClick={() => smoothScroll("#about")}>Sobre nós</a></li>
+            <li><a onClick={() => smoothScroll("#portfolio")}>Portifólio</a></li>
+            <li><a onClick={() => smoothScroll("#process")}>Processo</a></li>
           </ul>
         </div>
         

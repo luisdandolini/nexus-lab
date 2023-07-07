@@ -8,6 +8,16 @@
   background-repeat: no-repeat;
 }
 
+.background_mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background: linear-gradient(180deg, rgba(65, 103, 127, 1) 0%, #3F657C 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .logo {
   width: 140px;
   margin-left: 1rem;
@@ -33,14 +43,14 @@
 
 .menu_itens {
   position: absolute;
-  background: url('../../assets/bg.png'), linear-gradient(180deg, #41677F 0%, #3F657C 100%);
+  background: linear-gradient(180deg, rgba(65, 103, 127, 1) 0%, #3F657C 100%);
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   right: 0px;
   z-index: 100;
   top: 59px;
-  height: 100%;
+  height: 500%;
 }
 
 .links {
@@ -67,10 +77,22 @@
   font-weight: 600;
 }
 
-.container_button {
+.container_button_mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
+}
+
+.container_button_mobile button {
+  background-color: #11E956;
+  height: 44px;
+  border-radius: .5rem;
+  border: none;
+  padding: .75rem 1.5rem .75rem 1.5rem;
+  color: #001F3F;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
 }

@@ -12,14 +12,15 @@
   justify-content: space-around;
 }
 
-.container {
+.container_links_go {
   display: flex;
   align-items: center;
   padding-top: 1.25rem;
   gap: 3.75rem;
+  cursor: pointer;
 }
 
-.container img {
+.container_links_go img {
   width: 300px;
   height: 80px;
 }
