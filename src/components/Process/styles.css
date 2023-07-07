@@ -51,3 +51,9 @@
 .divider {
   margin-top: 4rem;
 }
+
+@media(min-width: 2000px) {
+  .container_process h2 {
+    margin-left: 45rem;
+  }
+}

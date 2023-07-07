@@ -4,6 +4,7 @@ import More from "../../components/More";
 import About from "../../components/About";
 import Portfolio from "../../components/Portfolio";
 import Process from "../../components/Process";
+import Products from "../../components/Products";
 
 export default function Home() {
   return(
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Portfolio />
       <Process />
+      <Products />
     </>
   )
 }

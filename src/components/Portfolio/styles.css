@@ -114,3 +114,9 @@
   color: #001F3F;
   cursor: pointer;
 }
+
+@media(min-width: 2000px) {
+  .container_portfolio h2 {
+    margin-left: 45rem;
+  }
+}
