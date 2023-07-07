@@ -33,6 +33,9 @@
 
 .image_portfolio {
   width: 360px;
+  height: 226px;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
 }
 
 .content {

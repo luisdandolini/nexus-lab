@@ -1,5 +1,7 @@
 import './styles.css';
 import Teste from '../../assets/teste.svg';
+import Fast from '../../assets/fast-sale.png';
+import WebSite from '../../assets/tecpet.png';
 import ViewerSite from '../../assets/link-circle.svg'
 
 export default function Portfolio() {
@@ -31,7 +33,7 @@ export default function Portfolio() {
         <div className='container_portfolio_content'>
           <div>
             <div>
-              <img src={Teste} alt="" className='image_portfolio' />
+              <img src={Fast} alt="" className='image_portfolio' />
               <div className='content'>
                 <h3>Título do projeto</h3>
                 <p className='text'>
@@ -52,7 +54,7 @@ export default function Portfolio() {
         <div className='container_portfolio_content'>
           <div>
             <div>
-              <img src={Teste} alt="" className='image_portfolio' />
+              <img src={WebSite} alt="" className='image_portfolio' />
               <div className='content'>
                 <h3>Título do projeto</h3>
                 <p className='text'>
