@@ -46,11 +46,11 @@
   gap: 1rem;
 }
 
-.container_button {
+.container_button_hero {
   margin-top: 4.28rem;
 }
 
-.container_button button {
+.container_button_hero button {
   background-color: #11E956;
   width: 240px;
   height: 46px;
@@ -64,4 +64,37 @@
 .hero_image {
   width: 424px;
   height: 384px;
+}
+
+@media(max-width: 768px) {
+  .container_hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2.75rem;
+  }
+  .title {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .container_esclamacao {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .container_button_hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .img_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero_image {
+    width: 324px;
+    height: 284px;
+  }
 }
