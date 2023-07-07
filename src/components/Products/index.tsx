@@ -2,14 +2,29 @@ import './styles.css';
 import Websites from '../../assets/monitor-mobile.svg';
 import Sistemas from '../../assets/monitor.svg';
 import Mobile from '../../assets/mobile.svg';
+import { useMediaQuery } from 'react-responsive';
+import { useState, useEffect } from 'react';
 
 export default function Products() {
+  const [isMobile, setIsMobile] = useState(false);
+  const isMobileQuery = useMediaQuery({ query: `(max-width: 767px)` });
+
+  useEffect(() => {
+    setIsMobile(isMobileQuery);
+  }, [isMobileQuery]);
+
   return(
     <section className='container_services'>
       <h2>Serviços</h2>
       <div className='services'>
 
-        <div className='divider_details'></div>
+        {
+          isMobile ? (
+            <></>
+          ):(
+            <div className='divider_details'></div>
+          )
+        }
 
         <div className='services_content'>
           <img src={Websites} alt="" />
@@ -19,7 +34,13 @@ export default function Products() {
           </p>
         </div>
 
-        <div className='divider_details'></div>
+        {
+          isMobile ? (
+            <></>
+          ):(
+            <div className='divider_details'></div>
+          )
+        }
 
         <div className='services_content'> 
           <img src={Sistemas} alt="" />
@@ -29,7 +50,13 @@ export default function Products() {
           </p>
         </div> 
 
-        <div className='divider_details'></div>
+        {
+          isMobile ? (
+            <></>
+          ):(
+            <div className='divider_details'></div>
+          )
+        }
 
         <div className='services_content'>
           <img src={Mobile} alt="" />
@@ -39,7 +66,13 @@ export default function Products() {
           </p>
         </div>
 
-        <div className='divider_details'></div>
+        {
+          isMobile ? (
+            <></>
+          ):(
+            <div className='divider_details'></div>
+          )
+        }
       </div>
     </section>
   )
