@@ -1,4 +1,4 @@
-import './style.css';
+import './styles.css';
 import HeroImage from '../../assets/Hero.png';
 import Esclamacao from '../../assets/Exclamação.png';
 

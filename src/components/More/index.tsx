@@ -1,4 +1,4 @@
-import './style.css';
+import './styles.css';
 import Cpu from '../../assets/cpu.svg';
 import Crown from '../../assets/crown.svg';
 import Arrow from '../../assets/programming-arrows.svg';

@@ -1,0 +1,115 @@
+.container_portfolio {
+  background-color: #3F657C;
+}
+
+.container_portfolio h2 {
+  color: #001F3F;
+  font-size: 2rem;
+  margin-bottom:  1.5rem;
+  margin-left: 10rem;
+}
+
+.container_portfolio h2::after {
+  background-color: #11E956;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 40px;
+  border-radius: .625rem;
+}
+
+.container_project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem
+}
+
+.container_portfolio_content {
+  background-color: #001F3F;
+  border-radius: 1rem;
+}
+
+.image_portfolio {
+  width: 360px;
+}
+
+.content {
+  width: 360px;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  color: #CFCFCF;
+  font-weight: 500;
+}
+
+.text {
+  color: #b2b2b2;
+  font-weight: 300;
+  padding: .5rem 1rem;
+  width: 300px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.skills {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  color: #CFCFCF;
+  font-weight: 400;
+}
+
+.skills span {
+  color: #b2b2b2;
+  font-weight: 300;
+  font-size: .875rem;
+}
+
+.viewer {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 1.5rem 1rem;
+  gap: .8rem;
+  font-weight: 400;
+}
+
+.viewer a {
+  cursor: pointer;
+  color: #CFCFCF;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.container_button_projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.more_projects {
+  background-color: transparent;
+  border: 2px solid #11E956;
+  width: 180px;
+  height: 42px;
+  border-radius: .5rem;
+  font-size: 1.1rem;
+  color: #11E956;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact {
+  background-color: #11E956;
+  width: 200px;
+  height: 38px;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #001F3F;
+  cursor: pointer;
+}
